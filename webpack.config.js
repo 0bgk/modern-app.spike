@@ -9,6 +9,9 @@ module.exports = (webpackConfigEnv, argv) => {
     argv,
   });
 
+  // Remove externals to bundle React inside the app
+  delete defaultConfig.externals;
+
   return merge(defaultConfig, {
     // modify the webpack config however you'd like to by adding to this object
   });
