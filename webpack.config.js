@@ -7,7 +7,6 @@ module.exports = (webpackConfigEnv, argv) => {
     projectName: "modern-app",
     webpackConfigEnv,
     argv,
-    outputSystemJS: false,
   });
 
   return merge(defaultConfig, {
